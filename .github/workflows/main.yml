@@ -31,3 +31,12 @@ jobs:
           kubernetes version: 'v1.19.2'
       - name: Interact with the cluster
         run: kubectl get nodes
+      - name: Helm tool installer
+        uses: Azure/setup-helm@v1
+      - uses: clowdhaus/argo-cd-action/@main
+        with:
+          version: 2.0.0
+          command: version
+          options: --client
+  
+  
