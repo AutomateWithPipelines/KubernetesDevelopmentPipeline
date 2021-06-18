@@ -415,8 +415,6 @@ jobs:
         run: helm repo add puppet https://puppetlabs.github.io/puppetserver-helm-chart
       - name: hokstack
         run: helm repo add hokstack https://charts.hokstack.io
-      - name: redsky
-        run: helm repo add redsky https://redskyops.dev/charts/
       - name: azure
         run: helm repo add azure-apim-gateway https://azure.github.io/api-management-self-hosted-gateway/helm-charts/
       - name: stardog
