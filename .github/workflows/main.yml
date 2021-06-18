@@ -33,6 +33,574 @@ jobs:
         run: kubectl get nodes
       - name: Helm tool installer
         uses: Azure/setup-helm@v1
+      - name: jfrog
+        run: helm repo add jfrog https://charts.jfrog.io
+      - name: kremers
+        run: helm repo add kremers https://kremers.github.io
+      - name: linkerd2
+        run: helm repo add linkerd2 https://helm.linkerd.io/stable
+      - name: linkerd2
+        run: helm repo add linkerd2-edge https://helm.linkerd.io/edge
+      - name: rimusz
+        run: helm repo add rimusz https://charts.rimusz.net
+      - name: buildkite
+        run: helm repo add buildkite https://buildkite.github.io/charts
+      - name: cloudposse
+        run: helm repo add cloudposse https://charts.cloudposse.com/incubator/
+      - name: cockroachdb
+        run: helm repo add cockroachdb https://charts.cockroachdb.com/
+      - name: keel
+        run: helm repo add keel https://charts.keel.sh
+      - name: webhookrelay
+        run: helm repo add webhookrelay https://charts.webhookrelay.com
+      - name: appscode
+        run: helm repo add appscode https://charts.appscode.com/stable/
+      - name: gitlab
+        run: helm repo add gitlab https://charts.gitlab.io/
+      - name: bitnami
+        run: helm repo add bitnami https://charts.bitnami.com/bitnami
+      - name: fluxcd
+        run: helm repo add fluxcd https://charts.fluxcd.io
+      - name: jetstack
+        run: helm repo add jetstack https://charts.jetstack.io
+      - name: ibm
+        run: helm repo add ibm-charts https://raw.githubusercontent.com/IBM/charts/master/repo/stable/
+      - name: kanister
+        run: helm repo add kanister https://charts.kanister.io/
+      - name: fikaworks
+        run: helm repo add fikaworks https://fikaworks.github.io/helm-charts
+      - name: flagger
+        run: helm repo add flagger https://flagger.app
+      - name: zammad
+        run: helm repo add zammad https://zammad.github.io
+      - name: agones
+        run: helm repo add agones https://agones.dev/chart/stable
+      - name: banzaicloud
+        run: helm repo add banzaicloud-stable https://kubernetes-charts.banzaicloud.com
+      - name: kiwigrid
+        run: helm repo add kiwigrid https://kiwigrid.github.io
+      - name: elastic
+        run: helm repo add elastic https://helm.elastic.co
+      - name: openfaas
+        run: helm repo add openfaas https://openfaas.github.io/faas-netes
+      - name: inlets
+        run: helm repo add inlets https://inlets.github.io/inlets-operator/
+      - name: odavid
+        run: helm repo add odavid https://odavid.github.io/k8s-helm-charts
+      - name: soluto
+        run: helm repo add soluto https://charts.soluto.io
+      - name: hephy
+        run: helm repo add hephy https://charts.teamhephy.com
+      - name: gabibbo97
+        run: helm repo add gabibbo97 https://gabibbo97.github.io/charts/
+      - name: presslabs
+        run: helm repo add presslabs https://presslabs.github.io/charts
+      - name: eventstore
+        run: helm repo add eventstore https://eventstore.github.io/EventStore.Charts
+      - name: pnnl
+        run: helm repo add pnnl-miscscripts https://pnnl-miscscripts.github.io/charts
+      - name: ceph
+        run: helm repo add ceph-csi https://ceph.github.io/csi-charts
+      - name: fairwinds
+        run: helm repo add fairwinds-stable https://charts.fairwinds.com/stable
+      - name: yourls
+        run: helm repo add yourls https://charts.yourls.org
+      - name: hazelcast
+        run: helm repo add hazelcast https://hazelcast-charts.s3.amazonaws.com/
+      - name: nginx
+        run: helm repo add nginx https://helm.nginx.com/stable
+      - name: nginx
+        run: helm repo add nginx-edge https://helm.nginx.com/edge
+      - name: citrix
+        run: helm repo add citrix https://citrix.github.io/citrix-helm-charts/
+      - name: zooz
+        run: helm repo add zooz https://zooz.github.io/helm/
+      - name: rancher
+        run: helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+      - name: loki
+        run: helm repo add loki https://grafana.github.io/loki/charts
+      - name: grafana
+        run: helm repo add grafana https://grafana.github.io/helm-charts
+      - name: microsoft
+        run: helm repo add microsoft https://microsoft.github.io/charts/repo
+      - name: expediagroup
+        run: helm repo add expediagroup https://expediagroup.github.io/helm-charts/repo
+      - name: codecentric
+        run: helm repo add codecentric https://codecentric.github.io/helm-charts
+      - name: okgolove
+        run: helm repo add okgolove https://okgolove.github.io/helm-charts
+      - name: dhiatn
+        run: helm repo add dhiatn https://dhiatn.github.io/helm-kafka-topics-ui
+      - name: k8dash
+        run: helm repo add k8dash https://herbrandson.github.io/k8dash/helm
+      - name: funkypenguin
+        run: helm repo add funkypenguin https://funkypenguin.github.io/helm-charts
+      - name: geek
+        run: helm repo add geek-cookbook https://geek-cookbook.github.io/charts
+      - name: mattermost
+        run: helm repo add mattermost https://helm.mattermost.com
+      - name: emberstack
+        run: helm repo add emberstack https://emberstack.github.io/helm-charts
+      - name: appuio
+        run: helm repo add appuio https://charts.appuio.ch
+      - name: gomods
+        run: helm repo add gomods https://athens.blob.core.windows.net/charts
+      - name: zentainer
+        run: helm repo add zentainer https://charts.zentainer.app
+      - name: promitor
+        run: helm repo add promitor https://promitor.azurecr.io/helm/v1/repo
+      - name: kir4h
+        run: helm repo add kir4h https://kir4h.github.io/charts
+      - name: hmdmph
+        run: helm repo add hmdmph https://hmdmph.github.io/helm-charts
+      - name: drgrove
+        run: helm repo add drgrove https://drgrove.github.io/charts
+      - name: harbor
+        run: helm repo add harbor https://helm.goharbor.io
+      - name: appdynamics
+        run: helm repo add appdynamics https://appdynamics.github.io/appdynamics-charts
+      - name: billimek
+        run: helm repo add billimek https://billimek.com/billimek-charts/
+      - name: choerodon
+        run: helm repo add choerodon https://openchart.choerodon.com.cn/choerodon/c7n
+      - name: kedacore
+        run: helm repo add kedacore https://kedacore.github.io/charts
+      - name: seldon
+        run: helm repo add seldon https://storage.googleapis.com/seldon-charts
+      - name: gkarthiks
+        run: helm repo add gkarthiks https://gkarthiks.github.io/helm-charts
+      - name: opsdroid
+        run: helm repo add opsdroid https://helm.opsdroid.dev/
+      - name: privatebin
+        run: helm repo add privatebin https://privatebin.github.io/helm-chart/
+      - name: gresearch
+        run: helm repo add gresearch https://g-research.github.io/charts/
+      - name: smallstep
+        run: helm repo add smallstep https://smallstep.github.io/helm-charts/
+      - name: volcano
+        run: helm repo add volcano https://volcano-sh.github.io/charts/
+      - name: ory
+        run: helm repo add ory https://k8s.ory.sh/helm/charts
+      - name: cetic
+        run: helm repo add cetic https://cetic.github.io/helm-charts
+      - name: qamatic
+        run: helm repo add qamatic https://qamatic.github.io/charts
+      - name: sstarcher
+        run: helm repo add sstarcher https://shanestarcher.com/helm-charts/
+      - name: lifen
+        run: helm repo add lifen https://honestica.github.io/lifen-charts/
+      - name: owkin
+        run: helm repo add owkin https://owkin.github.io/charts
+      - name: simplyzee
+        run: helm repo add simplyzee https://charts.simplyzee.dev/
+      - name: mirusresearch
+        run: helm repo add mirusresearch https://mirusresearch.github.io/charts/
+      - name: forseti
+        run: helm repo add forseti-security https://forseti-security-charts.storage.googleapis.com/release/
+      - name: hue
+        run: helm repo add hue https://helm.gethue.com
+      - name: t3n
+        run: helm repo add t3n https://storage.googleapis.com/t3n-helm-charts
+      - name: kubedex
+        run: helm repo add kubedex https://kubedex.github.io/charts
+      - name: snl
+        run: helm repo add snl-charts https://snebel29.github.io/snl-charts
+      - name: crowdfox
+        run: helm repo add crowdfox https://crowdfoxgmbh.github.io/cfcharts
+      - name: architectminds
+        run: helm repo add architectminds https://architectminds.github.io/helm-charts/
+      - name: uswitch
+        run: helm repo add uswitch https://uswitch.github.io/kiam-helm-charts/charts/
+      - name: external
+        run: helm repo add external-secrets https://godaddy.github.io/kubernetes-external-secrets/
+      - name: pfisterer
+        run: helm repo add pfisterer-knox https://pfisterer.github.io/apache-knox-helm/
+      - name: aerospike
+        run: helm repo add aerospike https://aerospike.github.io/aerospike-kubernetes-enterprise
+      - name: mogaal
+        run: helm repo add mogaal https://mogaal.github.io/helm-charts/
+      - name: argo
+        run: helm repo add argo https://argoproj.github.io/argo-helm
+      - name: honeydipper
+        run: helm repo add honeydipper https://raw.githubusercontent.com/honeydipper/honeydipper-charts/master/
+      - name: adwerx
+        run: helm repo add adwerx https://adwerx.github.io/charts/
+      - name: hpe
+        run: helm repo add hpe-storage https://hpe-storage.github.io/co-deployments/
+      - name: squidex
+        run: helm repo add squidex https://squidex.github.io/squidex-docker/
+      - name: liwenhe
+        run: helm repo add liwenhe https://liwenhe1993.github.io/charts/
+      - name: yugabyte
+        run: helm repo add yugabyte https://charts.yugabyte.com
+      - name: crate
+        run: helm repo add crate https://crate.github.io/helm-charts
+      - name: oxyno
+        run: helm repo add oxyno-zeta https://oxyno-zeta.github.io/helm-charts/stable/
+      - name: dragonchain
+        run: helm repo add dragonchain https://dragonchain-charts.s3.amazonaws.com
+      - name: couchdb
+        run: helm repo add couchdb https://apache.github.io/couchdb-helm/
+      - name: cryptlex
+        run: helm repo add cryptlex https://cryptlex.github.io/helm-charts/
+      - name: dask
+        run: helm repo add dask https://helm.dask.org/
+      - name: substra
+        run: helm repo add substra https://substrafoundation.github.io/charts/
+      - name: cloudwatch
+        run: helm repo add cloudwatch-agent https://s2504s.github.io/charts/
+      - name: cloudbees
+        run: helm repo add cloudbees https://charts.cloudbees.com/public/cloudbees
+      - name: concourse
+        run: helm repo add concourse https://concourse-charts.storage.googleapis.com/
+      - name: tomkerkhove
+        run: helm repo add tomkerkhove https://tomkerkhove.azurecr.io/helm/v1/repo
+      - name: cgroschupp
+        run: helm repo add cgroschupp https://cgroschupp.github.io/helm-charts/
+      - name: jenkins
+        run: helm repo add jenkins https://raw.githubusercontent.com/jenkinsci/kubernetes-operator/master/chart
+      - name: jenkinsci
+        run: helm repo add jenkinsci https://charts.jenkins.io/
+      - name: talend
+        run: helm repo add talend https://talend.github.io/helm-charts-public/stable
+      - name: softonic
+        run: helm repo add softonic https://charts.softonic.io
+      - name: aws
+        run: helm repo add aws https://aws.github.io/eks-charts
+      - name: kubeinvaders
+        run: helm repo add kubeinvaders https://lucky-sideburn.github.io/helm-charts/
+      - name: wso2
+        run: helm repo add wso2 https://helm.wso2.com
+      - name: crossplane
+        run: helm repo add crossplane https://charts.crossplane.io/master/
+      - name: lohmag
+        run: helm repo add lohmag https://lohmag.github.io/helm-charts/
+      - name: cern
+        run: helm repo add cern https://charts.cern.ch/cern/
+      - name: chubaofs
+        run: helm repo add chubaofs https://chubaofs.github.io/chubaofs-charts
+      - name: ruguodangshi
+        run: helm repo add ruguodangshi https://ruguodangshi.github.io
+      - name: mailu
+        run: helm repo add mailu https://mailu.github.io/helm-charts/
+      - name: gp42
+        run: helm repo add gp42 https://ops42.org/helm-charts
+      - name: sumologic
+        run: helm repo add sumologic https://sumologic.github.io/sumologic-kubernetes-collection
+      - name: inspur
+        run: helm repo add inspur https://inspur-iop.github.io/charts/
+      - name: backube
+        run: helm repo add backube https://backube.github.io/helm-charts/
+      - name: k8s
+        run: helm repo add k8s-land https://charts.k8s.land
+      - name: fold
+        run: helm repo add fold https://charts.foldapp.com
+      - name: vmware
+        run: helm repo add vmware-tanzu https://vmware-tanzu.github.io/helm-charts/
+      - name: pangeo
+        run: helm repo add pangeo https://pangeo-data.github.io/helm-chart/
+      - name: jaegertracing
+        run: helm repo add jaegertracing https://jaegertracing.github.io/helm-charts
+      - name: riskfocus
+        run: helm repo add riskfocus https://riskfocus.github.io/helm-charts-public/
+      - name: flink
+        run: helm repo add flink-operator https://googlecloudplatform.github.io/flink-on-k8s-operator/
+      - name: halkeye
+        run: helm repo add halkeye https://halkeye.github.io/helm-charts/
+      - name: wavefront
+        run: helm repo add wavefront https://wavefronthq.github.io/helm/
+      - name: eclipse
+        run: helm repo add eclipse-iot https://www.eclipse.org/packages/charts/
+      - name: ntppool
+        run: helm repo add ntppool https://charts.ntppool.org/
+      - name: pomerium
+        run: helm repo add pomerium https://helm.pomerium.io
+      - name: http
+        run: helm repo add http-folder https://aureliengasser.github.io/charts
+      - name: kong
+        run: helm repo add kong https://charts.konghq.com
+      - name: dynatrace
+        run: helm repo add dynatrace https://raw.githubusercontent.com/Dynatrace/helm-charts/master/repos/stable/
+      - name: mojo2600
+        run: helm repo add mojo2600 https://mojo2600.github.io/pihole-kubernetes/
+      - name: purestorage
+        run: helm repo add purestorage https://purestorage.github.io/helm-charts
+      - name: solace
+        run: helm repo add solace https://solaceproducts.github.io/pubsubplus-kubernetes-quickstart/helm-charts
+      - name: ckotzbauer
+        run: helm repo add ckotzbauer https://ckotzbauer.github.io/helm-charts
+      - name: larribas
+        run: helm repo add larribas https://larribas.me/helm-charts
+      - name: ealenn
+        run: helm repo add ealenn https://ealenn.github.io/charts
+      - name: oteemo
+        run: helm repo add oteemo https://oteemo.github.io/charts/
+      - name: tietoevryfs
+        run: helm repo add tietoevryfs https://evryfs.github.io/helm-charts/
+      - name: quarks
+        run: helm repo add quarks https://cloudfoundry-incubator.github.io/quarks-helm/
+      - name: dniel
+        run: helm repo add dniel https://dniel.github.io/charts/
+      - name: cowboysysop
+        run: helm repo add cowboysysop https://cowboysysop.github.io/charts/
+      - name: blazure
+        run: helm repo add blazure https://charts.blazure.com
+      - name: cleardata
+        run: helm repo add cleardata https://helm.cleardata.com/
+      - name: meshery
+        run: helm repo add meshery https://meshery.io/charts/
+      - name: influxdata
+        run: helm repo add influxdata https://helm.influxdata.com/
+      - name: eclipse
+        run: helm repo add eclipse-dirigible https://dirigiblelabs.github.io/charts/
+      - name: microcks
+        run: helm repo add microcks https://microcks.io/helm
+      - name: enapter
+        run: helm repo add enapter https://enapter.github.io/charts/
+      - name: camel
+        run: helm repo add camel-k https://apache.github.io/camel-k/charts/
+      - name: trickster
+        run: helm repo add trickster https://helm.tricksterproxy.io/
+      - name: gradiant
+        run: helm repo add gradiant https://gradiant.github.io/charts/
+      - name: runix
+        run: helm repo add runix https://helm.runix.net/
+      - name: jitterbit
+        run: helm repo add jitterbit https://jitterbit.github.io/charts/
+      - name: franzinc
+        run: helm repo add franzinc https://franz.com/ftp/pub/helm/charts/
+      - name: prometheus
+        run: helm repo add prometheus-msteams https://prometheus-msteams.github.io/helm-chart
+      - name: dandydeveloper
+        run: helm repo add dandydeveloper https://dandydeveloper.github.io/charts
+      - name: brannon
+        run: helm repo add brannon https://helm.brannon.online
+      - name: pcktdmp
+        run: helm repo add pcktdmp https://pcktdmp.github.io/charts
+      - name: fluent
+        run: helm repo add fluent https://fluent.github.io/helm-charts
+      - name: ververica
+        run: helm repo add ververica https://charts.ververica.com/
+      - name: smueller18
+        run: helm repo add smueller18 https://smueller18.gitlab.io/helm-charts
+      - name: renovate
+        run: helm repo add renovate https://docs.renovatebot.com/helm-charts
+      - name: dacruz21
+        run: helm repo add dacruz21 https://dacruz21.github.io/helm-charts
+      - name: kuberhealthy
+        run: helm repo add kuberhealthy https://comcast.github.io/kuberhealthy/helm-repos
+      - name: equinor
+        run: helm repo add equinor-charts https://equinor.github.io/helm-charts/charts/
+      - name: touk
+        run: helm repo add touk https://helm-charts.touk.pl/public/
+      - name: codimd
+        run: helm repo add codimd https://helm.codimd.dev/
+      - name: carlosjgp
+        run: helm repo add carlosjgp https://carlosjgp.github.io/open-charts/
+      - name: fyipe
+        run: helm repo add fyipe https://fyipe.com/chart
+      - name: nats
+        run: helm repo add nats https://nats-io.github.io/k8s/helm/charts/
+      - name: pndaproject
+        run: helm repo add pndaproject https://pndaproject.github.io/pnda-helm-chart/
+      - name: wyrihaximusnet
+        run: helm repo add wyrihaximusnet https://helm.wyrihaximus.net/
+      - name: tremolosecurity
+        run: helm repo add tremolosecurity https://nexus.tremolo.io/repository/helm/
+      - name: cronce
+        run: helm repo add cronce https://charts.cronce.io/
+      - name: verdaccio
+        run: helm repo add verdaccio https://charts.verdaccio.org/
+      - name: enix
+        run: helm repo add enix https://charts.enix.io/
+      - name: mox
+        run: helm repo add mox https://helm.mox.sh/
+      - name: saikatharryc
+        run: helm repo add saikatharryc https://saikatharryc.github.io/helm/
+      - name: volantmq
+        run: helm repo add volantmq https://volantmq.github.io/helm/
+      - name: ukfast
+        run: helm repo add ukfast https://ukfast.github.io/helm-charts
+      - name: redash
+        run: helm repo add redash https://getredash.github.io/contrib-helm-chart/
+      - name: emagtechlabs
+        run: helm repo add emagtechlabs https://emagtechlabs.github.io/helm-charts/
+      - name: gitkent
+        run: helm repo add gitkent https://gitkent.github.io/helm-charts/
+      - name: logiqai
+        run: helm repo add logiqai https://logiqai.github.io/helm-charts/
+      - name: couchbase
+        run: helm repo add couchbase https://couchbase-partners.github.io/helm-charts/
+      - name: puppet
+        run: helm repo add puppet https://puppetlabs.github.io/puppetserver-helm-chart
+      - name: hokstack
+        run: helm repo add hokstack https://charts.hokstack.io
+      - name: redsky
+        run: helm repo add redsky https://redskyops.dev/charts/
+      - name: honeycomb
+        run: helm repo add honeycomb https://honeycombio.github.io./helm-charts/
+      - name: azure
+        run: helm repo add azure-apim-gateway https://azure.github.io/api-management-self-hosted-gateway/helm-charts/
+      - name: stardog
+        run: helm repo add stardog https://stardog-union.github.io/helm-charts/
+      - name: erpnext
+        run: helm repo add erpnext https://helm.erpnext.com
+      - name: ladeit
+        run: helm repo add ladeit https://ladeit.github.io/charts
+      - name: pozetron
+        run: helm repo add pozetron https://www.pozetron.com/helm/
+      - name: sudermanjr
+        run: helm repo add sudermanjr https://charts.sudermanjr.com
+      - name: cnieg
+        run: helm repo add cnieg https://cnieg.github.io/helm-charts
+      - name: snyk
+        run: helm repo add snyk https://snyk.github.io/kubernetes-monitor/
+      - name: weblate
+        run: helm repo add weblate https://helm.weblate.org
+      - name: solr
+        run: helm repo add solr-operator https://bloomberg.github.io/solr-operator/charts
+      - name: inaccel
+        run: helm repo add inaccel https://setup.inaccel.com/helm
+      - name: neo4j
+        run: helm repo add neo4j https://neo4j-contrib.github.io/neo4j-helm/
+      - name: hashicorp
+        run: helm repo add hashicorp https://helm.releases.hashicorp.com
+      - name: eddycharly
+        run: helm repo add eddycharly https://eddycharly.github.io/tekton-helm
+      - name: datawire
+        run: helm repo add datawire https://getambassador.io/
+      - name: apicheck
+        run: helm repo add apicheck https://bbva.github.io/apicheck/charts/
+      - name: waldur
+        run: helm repo add waldur https://opennode.github.io/waldur-helm/
+      - name: milvus
+        run: helm repo add milvus https://milvus-io.github.io/milvus-helm/
+      - name: sysdiglabs
+        run: helm repo add sysdiglabs https://sysdiglabs.github.io/charts/
+      - name: yunikorn
+        run: helm repo add yunikorn https://apache.github.io/incubator-yunikorn-release
+      - name: k8s
+        run: helm repo add k8s-dashboard https://kubernetes.github.io/dashboard
+      - name: newrelic
+        run: helm repo add newrelic https://helm-charts.newrelic.com
+      - name: codesim
+        run: helm repo add codesim https://helm.codesim.com
+      - name: curity
+        run: helm repo add curity https://curityio.github.io/idsvr-helm
+      - name: dash
+        run: helm repo add dash-ops https://dash-ops.github.io/helm-charts
+      - name: rasooll
+        run: helm repo add rasooll https://rasooll.github.io/helm-charts
+      - name: openebs
+        run: helm repo add openebs https://openebs.github.io/charts
+      - name: pulsar
+        run: helm repo add pulsar https://pulsar.apache.org/charts
+      - name: kafkaesque
+        run: helm repo add kafkaesque https://helm.kafkaesque.io
+      - name: cape
+        run: helm repo add cape https://charts.cape.sh
+      - name: wombat
+        run: helm repo add wombat https://esl.github.io/helm-chart/charts/wombatChart
+      - name: hkube
+        run: helm repo add hkube https://hkube.io/helm
+      - name: maesh
+        run: helm repo add maesh https://containous.github.io/maesh/charts
+      - name: traefik
+        run: helm repo add traefik https://containous.github.io/traefik-helm-chart
+      - name: cgsimmons
+        run: helm repo add cgsimmons https://cgsimmons.github.io/charts
+      - name: splicemachine
+        run: helm repo add splicemachine https://splicemachine.github.io/charts
+      - name: streamnative
+        run: helm repo add streamnative https://charts.streamnative.io/
+      - name: kured
+        run: helm repo add kured https://weaveworks.github.io/kured
+      - name: litmuschaos
+        run: helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
+      - name: pl
+        run: helm repo add pl-helm-charts https://pranay-lonkar.github.io/helm-charts
+      - name: mlohr
+        run: helm repo add mlohr https://helm-charts.mlohr.com/
+      - name: twingate
+        run: helm repo add twingate https://twingate.github.io/helm-charts
+      - name: longhorn
+        run: helm repo add longhorn https://charts.longhorn.io
+      - name: falcosecurity
+        run: helm repo add falcosecurity https://falcosecurity.github.io/charts
+      - name: aerokube
+        run: helm repo add aerokube https://charts.aerokube.com/
+      - name: sonatype
+        run: helm repo add sonatype https://sonatype.github.io/helm3-charts/
+      - name: gissilabs
+        run: helm repo add gissilabs https://gissilabs.github.io/charts/
+      - name: sematext
+        run: helm repo add sematext https://cdn.sematext.com/helm-charts/
+      - name: ctron
+        run: helm repo add ctron https://ctron.github.io/helm-charts/
+      - name: balle
+        run: helm repo add balle-petersen https://charts.balle-petersen.org/
+      - name: storageos
+        run: helm repo add storageos https://charts.storageos.com
+      - name: datadog
+        run: helm repo add datadog https://helm.datadoghq.com
+      - name: w2bro
+        run: helm repo add w2bro https://radio-charts.w2bro.dev
+      - name: minio
+        run: helm repo add minio https://helm.min.io/
+      - name: fermosit
+        run: helm repo add fermosit https://harbor.fermosit.es/chartrepo/library
+      - name: astarte
+        run: helm repo add astarte https://helm.astarte-platform.org
+      - name: codit
+        run: helm repo add codit https://coditeu.github.io/charts
+      - name: stevehipwell
+        run: helm repo add stevehipwell https://stevehipwell.github.io/helm-charts/
+      - name: vertigo
+        run: helm repo add vertigo https://charts.vertigo.com.br/
+      - name: neoskop
+        run: helm repo add neoskop https://charts.neoskop.dev
+      - name: vulcanlink
+        run: helm repo add vulcanlink https://vulcanlink.github.io/charts/
+      - name: descheduler
+        run: helm repo add descheduler https://kubernetes-sigs.github.io/descheduler/
+      - name: percona
+        run: helm repo add percona https://percona.github.io/percona-helm-charts/
+      - name: kuma
+        run: helm repo add kuma https://kumahq.github.io/charts
+      - name: anchore
+        run: helm repo add anchore https://charts.anchore.io
+      - name: polyaxon
+        run: helm repo add polyaxon https://charts.polyaxon.com
+      - name: ingress
+        run: helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+      - name: lakefs
+        run: helm repo add lakefs https://charts.lakefs.io
+      - name: duyet
+        run: helm repo add duyet https://duyet.github.io/charts
+      - name: kvaps
+        run: helm repo add kvaps https://kvaps.github.io/charts
+      - name: questdb
+        run: helm repo add questdb https://helm.questdb.io
+      - name: lightstepsatellite
+        run: helm repo add lightstepsatellite https://lightstep.github.io/lightstep-satellite-helm-chart/
+      - name: fasterbytes
+        run: helm repo add fasterbytes https://fasterbytes.github.io/charts
+      - name: prometheus
+        run: helm repo add prometheus-com https://prometheus-community.github.io/helm-charts
+      - name: logicmonitor
+        run: helm repo add logicmonitor https://logicmonitor.github.com/k8s-helm-charts
+      - name: drycc
+        run: helm repo add drycc https://charts.drycc.cc/stable
+      - name: gocd
+        run: helm repo add gocd https://gocd.github.io/helm-chart
+      - name: mongoosehelm
+        run: helm repo add mongoosehelm https://esl.github.io/MongooseHelm/
+      - name: k8s
+        run: helm repo add k8s-cloudwatch https://awslabs.github.io/k8s-cloudwatch-adapter/charts/k8s-cloudwatch-adapter
+      - name: cmak
+        run: helm repo add cmak-operator https://eshepelyuk.github.io/cmak-operator/
+      - name: kfirfer
+        run: helm repo add kfirfer https://kfirfer.github.io/helm  
       - uses: clowdhaus/argo-cd-action/@main
         with:
           version: 2.0.0
