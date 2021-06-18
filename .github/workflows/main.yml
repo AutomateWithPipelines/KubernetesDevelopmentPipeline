@@ -263,8 +263,6 @@ jobs:
         run: helm repo add crossplane https://charts.crossplane.io/master/
       - name: lohmag
         run: helm repo add lohmag https://lohmag.github.io/helm-charts/
-      - name: cern
-        run: helm repo add cern https://charts.cern.ch/cern/
       - name: chubaofs
         run: helm repo add chubaofs https://chubaofs.github.io/chubaofs-charts
       - name: ruguodangshi
