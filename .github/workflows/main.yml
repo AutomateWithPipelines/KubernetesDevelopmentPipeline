@@ -157,8 +157,6 @@ jobs:
         run: helm repo add appdynamics https://appdynamics.github.io/appdynamics-charts
       - name: billimek
         run: helm repo add billimek https://billimek.com/billimek-charts/
-      - name: choerodon
-        run: helm repo add choerodon https://openchart.choerodon.com.cn/choerodon/c7n
       - name: kedacore
         run: helm repo add kedacore https://kedacore.github.io/charts
       - name: seldon
@@ -329,8 +327,6 @@ jobs:
         run: helm repo add dniel https://dniel.github.io/charts/
       - name: cowboysysop
         run: helm repo add cowboysysop https://cowboysysop.github.io/charts/
-      - name: blazure
-        run: helm repo add blazure https://charts.blazure.com
       - name: cleardata
         run: helm repo add cleardata https://helm.cleardata.com/
       - name: meshery
@@ -373,8 +369,6 @@ jobs:
         run: helm repo add renovate https://docs.renovatebot.com/helm-charts
       - name: dacruz21
         run: helm repo add dacruz21 https://dacruz21.github.io/helm-charts
-      - name: kuberhealthy
-        run: helm repo add kuberhealthy https://comcast.github.io/kuberhealthy/helm-repos
       - name: equinor
         run: helm repo add equinor-charts https://equinor.github.io/helm-charts/charts/
       - name: touk
@@ -423,8 +417,6 @@ jobs:
         run: helm repo add hokstack https://charts.hokstack.io
       - name: redsky
         run: helm repo add redsky https://redskyops.dev/charts/
-      - name: honeycomb
-        run: helm repo add honeycomb https://honeycombio.github.io./helm-charts/
       - name: azure
         run: helm repo add azure-apim-gateway https://azure.github.io/api-management-self-hosted-gateway/helm-charts/
       - name: stardog
@@ -443,8 +435,6 @@ jobs:
         run: helm repo add snyk https://snyk.github.io/kubernetes-monitor/
       - name: weblate
         run: helm repo add weblate https://helm.weblate.org
-      - name: solr
-        run: helm repo add solr-operator https://bloomberg.github.io/solr-operator/charts
       - name: inaccel
         run: helm repo add inaccel https://setup.inaccel.com/helm
       - name: neo4j
@@ -569,12 +559,8 @@ jobs:
         run: helm repo add questdb https://helm.questdb.io
       - name: lightstepsatellite
         run: helm repo add lightstepsatellite https://lightstep.github.io/lightstep-satellite-helm-chart/
-      - name: fasterbytes
-        run: helm repo add fasterbytes https://fasterbytes.github.io/charts
       - name: prometheus
         run: helm repo add prometheus-com https://prometheus-community.github.io/helm-charts
-      - name: logicmonitor
-        run: helm repo add logicmonitor https://logicmonitor.github.com/k8s-helm-charts
       - name: drycc
         run: helm repo add drycc https://charts.drycc.cc/stable
       - name: gocd
@@ -586,11 +572,9 @@ jobs:
       - name: cmak
         run: helm repo add cmak-operator https://eshepelyuk.github.io/cmak-operator/
       - name: kfirfer
-        run: helm repo add kfirfer https://kfirfer.github.io/helm  
+        run: helm repo add kfirfer https://kfirfer.github.io/helm
       - uses: clowdhaus/argo-cd-action/@main
         with:
           version: 2.0.0
           command: version
           options: --client
-  
-  
