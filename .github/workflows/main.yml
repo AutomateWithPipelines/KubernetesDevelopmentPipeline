@@ -221,8 +221,6 @@ jobs:
         run: helm repo add adwerx https://adwerx.github.io/charts/
       - name: hpe
         run: helm repo add hpe-storage https://hpe-storage.github.io/co-deployments/
-      - name: squidex
-        run: helm repo add squidex https://squidex.github.io/squidex-docker/
       - name: liwenhe
         run: helm repo add liwenhe https://liwenhe1993.github.io/charts/
       - name: yugabyte
