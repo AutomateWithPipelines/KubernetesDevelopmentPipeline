@@ -237,8 +237,6 @@ jobs:
         run: helm repo add cryptlex https://cryptlex.github.io/helm-charts/
       - name: dask
         run: helm repo add dask https://helm.dask.org/
-      - name: substra
-        run: helm repo add substra https://substrafoundation.github.io/charts/
       - name: cloudwatch
         run: helm repo add cloudwatch-agent https://s2504s.github.io/charts/
       - name: cloudbees
