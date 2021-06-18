@@ -131,8 +131,6 @@ jobs:
         run: helm repo add okgolove https://okgolove.github.io/helm-charts
       - name: dhiatn
         run: helm repo add dhiatn https://dhiatn.github.io/helm-kafka-topics-ui
-      - name: k8dash
-        run: helm repo add k8dash https://herbrandson.github.io/k8dash/helm
       - name: funkypenguin
         run: helm repo add funkypenguin https://funkypenguin.github.io/helm-charts
       - name: geek
