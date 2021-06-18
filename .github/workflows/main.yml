@@ -35,6 +35,8 @@ jobs:
         uses: Azure/setup-helm@v1
       - name: Setup Kubernetes Tools
         uses: yokawasa/action-setup-kube-tools@v0.7.1
+      - name: Helm Init
+        run: helm init --client-only
       - name: jfrog
         run: helm repo add jfrog https://charts.jfrog.io
       - name: kremers
