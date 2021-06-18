@@ -243,8 +243,6 @@ jobs:
         run: helm repo add cloudbees https://charts.cloudbees.com/public/cloudbees
       - name: concourse
         run: helm repo add concourse https://concourse-charts.storage.googleapis.com/
-      - name: tomkerkhove
-        run: helm repo add tomkerkhove https://tomkerkhove.azurecr.io/helm/v1/repo
       - name: cgroschupp
         run: helm repo add cgroschupp https://cgroschupp.github.io/helm-charts/
       - name: jenkins
