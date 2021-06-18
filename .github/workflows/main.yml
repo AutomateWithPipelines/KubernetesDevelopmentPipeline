@@ -141,8 +141,6 @@ jobs:
         run: helm repo add appuio https://charts.appuio.ch
       - name: gomods
         run: helm repo add gomods https://athens.blob.core.windows.net/charts
-      - name: zentainer
-        run: helm repo add zentainer https://charts.zentainer.app
       - name: promitor
         run: helm repo add promitor https://promitor.azurecr.io/helm/v1/repo
       - name: kir4h
