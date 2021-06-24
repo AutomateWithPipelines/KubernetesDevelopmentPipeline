@@ -1,0 +1,15 @@
+---
+name: K3s
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup K3d/K3s
+        uses: nolar/setup-k3d-k3s@v1.0.6
+  
