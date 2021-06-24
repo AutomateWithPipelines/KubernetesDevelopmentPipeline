@@ -546,8 +546,6 @@ jobs:
         run: helm repo add gocd https://gocd.github.io/helm-chart
       - name: mongoosehelm
         run: helm repo add mongoosehelm https://esl.github.io/MongooseHelm/
-      - name: k8s
-        run: helm repo add k8s-cloudwatch https://awslabs.github.io/k8s-cloudwatch-adapter/charts/k8s-cloudwatch-adapter
       - name: cmak
         run: helm repo add cmak-operator https://eshepelyuk.github.io/cmak-operator/
       - name: kfirfer
@@ -557,4 +555,5 @@ jobs:
           version: 2.0.0
           command: version
           options: --client
-  
+      - name: search rancger repo
+        run: helm search repo rancher
